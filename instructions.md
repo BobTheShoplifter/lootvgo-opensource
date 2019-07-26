@@ -228,6 +228,29 @@ npm run build
 Move files from /dist to where they can be served over HTTP
 ```
 
+**If you are using Nginx here is a reverse proxy**
+
+```sh
+cd /etc/nginx/sites-available
+```
+open default file
+
+add this under server_name _;
+
+```
+location / {
+		proxy_pass http://localhost:8123;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+	}
+```
+
+![](https://i.gyazo.com/5f5b44ab79fbaf0e56fb0c6b841a11d8.png)
+
+
 **Note: index.html in dist, needs to be served over HTTP for it to work properly**
 
 ![](https://i.gyazo.com/434b2f9276f94723847fbdb130cd48d0.png)
