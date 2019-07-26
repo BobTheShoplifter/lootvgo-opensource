@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+// Export to JS modules
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  tertiary: $tertiary;
+  quaternary: $quaternary;
+  text: $text;
+  text-invert: $text-invert;
+  light: $light;
+  dark: $dark;
+  darker: $darker;
+
+  danger: $danger;
+  warning: $warning;
+  info: $info;
+  success: $success;
+}

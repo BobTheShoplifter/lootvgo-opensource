@@ -1,0 +1,54 @@
+//
+// Typography
+//
+
+.fw-light {
+  font-weight: lighter;
+}
+.fw-regular {
+  font-weight: 400 !important;
+}
+.fw-semibold {
+  font-weight: 600 !important;
+}
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.text-faded-5 {
+  opacity: 0.5;
+}
+.text-faded-3 {
+  opacity: 0.3;
+}
+
+// transforms & styles
+.text-caps {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.italic {
+  font-style: italic;
+}
+
+//
+// Text Controlls
+//
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+.no-wrap {
+  white-space: nowrap !important;
+}

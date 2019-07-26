@@ -1,0 +1,434 @@
+nav.navbar {
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    .branding {
+      width: unset !important;
+      margin-left: 10px !important;
+    }
+    .logo-container {
+      margin-right: 5px;
+    }
+    .key-count .btn {
+      span {
+        display: none;
+      }
+      .icon {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .toolbar__content {
+      height: 55px !important;
+    }
+
+    .collapse-mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: $dark;
+      justify-content: space-around;
+      box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 rgba(0, 0, 0, 0.12);
+    }
+    .user-container {
+      img.avatar {
+        width: 45px !important;
+      }
+      .name {
+        max-width: 140px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .branding {
+      padding: 0 !important;
+      margin-right: 5px;
+      .logo-container {
+        width: 130px;
+        margin-right: 0;
+      }
+    }
+    .user-container {
+      .meta {
+        display: none;
+      }
+    }
+    .volume-ctn .menu__content {
+      display: none;
+    }
+  }
+}
+
+.sidebar {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    margin-top: 0 !important;
+    max-height: 100% !important;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 0 !important;
+    max-height: calc(100% - 40px) !important;
+
+    &:not(.stats) {
+      transform: translateX(100%) !important;
+    }
+
+    &.stats {
+      &.navigation-drawer--open .toggle {
+        right: unset;
+      }
+    }
+
+    .inner.chat {
+      .hover-hint {
+        font-size: 10px !important;
+      }
+      .input .input-group {
+        .menu {
+          display: none !important;
+        }
+        textarea {
+          height: 80px;
+        }
+      }
+    }
+
+    &.navigation-drawer--open {
+      transform: translateX(0) !important;
+      width: 100% !important;
+      max-width: unset;
+      z-index: 7;
+
+      .toggle {
+        transform: unset;
+        top: unset;
+        left: unset;
+        width: 100%;
+        cursor: pointer;
+        height: 40px;
+        bottom: -40px;
+        background: $primary;
+        z-index: 9;
+
+        .mobile-close {
+          display: block;
+        }
+        .button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.application main.content {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    padding-top: 105px !important;
+  }
+}
+
+footer.footer {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .hide-mb {
+      display: none;
+    }
+
+    .language-icon {
+      .flag-sm {
+        margin-right: 0 !important;
+      }
+      .caption {
+        display: none;
+      }
+    }
+
+    .links .btn {
+      min-width: unset;
+      svg {
+        margin: 0 !important;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+.page-content.page-cases {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .cases {
+      justify-content: center;
+    }
+    .cases .case.card {
+      margin-left: 8px !important;
+    }
+
+    .game-main,
+    .game-sidebar {
+      margin-right: unset !important;
+      max-width: unset;
+      min-width: 100%;
+    }
+  }
+}
+
+.page-content.page-case {
+  @media screen and (min-width: 1700px) {
+  }
+  @media screen and (min-width: 1264px) and (max-width: 1600px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+    .flex {
+      flex-basis: 100%;
+      flex-grow: 0;
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1264px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 900px) {
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .content {
+      margin: auto 0 !important;
+    }
+    .container.grid-list-xl {
+      padding: 12px;
+      .flex {
+        padding: 0;
+      }
+    }
+
+    .case-history,
+    .items-in-case {
+      .header {
+        flex-direction: column;
+
+        h1 {
+          margin-bottom: 10px;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .case-header {
+      flex-direction: column;
+
+      .meta {
+        margin-bottom: 15px;
+        .display-1 {
+          font-size: 20px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .btn {
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .case-header {
+      .case-info {
+        flex-direction: column;
+        text-align: center;
+        img {
+          margin: -15% 0 -20% 0;
+          width: 220px;
+        }
+      }
+      .meta {
+        .display-1 {
+          font-size: 26px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.page-content.page-replay {
+  @media screen and (min-width: 1700px) {
+  }
+  @media screen and (min-width: 1264px) and (max-width: 1600px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+    .flex {
+      flex-basis: 100%;
+      flex-grow: 0;
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1264px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 900px) {
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .content {
+      margin: auto 0 !important;
+    }
+    .container.grid-list-xl {
+      padding: 12px;
+      .flex {
+        padding: 0;
+      }
+    }
+
+    .items-in-case {
+      .header {
+        flex-direction: column;
+
+        h1 {
+          margin-bottom: 10px;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .case-header {
+      flex-direction: column;
+
+      .meta {
+        margin-bottom: 15px;
+        .display-1 {
+          font-size: 20px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .btn {
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .case-header {
+      .case-info {
+        flex-direction: column;
+        text-align: center;
+        img {
+          margin-top: -10px;
+          width: 100px;
+        }
+      }
+      .meta {
+        .display-1 {
+          font-size: 26px !important;
+          margin-bottom: 0 !important;
+          margin-top: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.spinner .item {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.page-content.page-battles {
+  @media screen and (min-width: 320px) and (max-width: 680px) {
+    .game-main,
+    .game-sidebar {
+      margin-right: unset !important;
+      max-width: unset;
+      min-width: 100%;
+    }
+
+    .listings {
+      display: block;
+      table,
+      tbody,
+      td {
+        display: block;
+      }
+
+      tr {
+        display: inline-table;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      .rounds {
+        border-radius: 8px 8px 0 0 !important;
+      }
+
+      .actions {
+        background: $darker !important;
+        border-radius: 0 0 8px 8px !important;
+      }
+
+      .listing {
+        box-shadow: none !important;
+      }
+
+      .cost {
+        flex-grow: 1;
+        box-shadow: none !important;
+      }
+
+      .players-ctn.divider-right {
+        border-right: none !important;
+      }
+
+      .players-ctn,
+      .cost {
+        // float: left;
+        display: inline-block;
+        width: 50%;
+      }
+
+      // .listing {
+      //   margin-bottom: 20px !important;
+      //   flex-direction: column;
+
+      //   .rounds {
+      //     border-radius: 8px 8px 0 0;
+      //   }
+
+      //   .rest {
+      //
+      //     overflow: hidden;
+      //     justify-content: center;
+      //     flex-wrap: wrap;
+
+      //     .players-ctn,
+      //     .cost {
+      //       padding: 10px 0;
+      //     }
+
+      //     .actions {
+      //       justify-content: center;
+      //       padding: 20px;
+      //       background: $darker;
+      //       width: 100% !important;
+      //     }
+      //   }
+    }
+  }
+}

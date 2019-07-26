@@ -1,0 +1,20 @@
+//
+// Positions
+//
+
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+// z-indexes
+@for $i from 1 through 10 {
+  .z-#{$i} {
+    z-index: $i;
+  }
+}

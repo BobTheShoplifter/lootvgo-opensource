@@ -1,0 +1,506 @@
+@import 'variables';
+@import 'responsive';
+
+// Fixes
+html {
+  overflow-y: auto !important;
+}
+
+body {
+  background-color: $darker;
+}
+
+#app {
+  background: $darker;
+}
+
+noscript {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+// components styling
+.menu__content {
+  ul.list {
+    margin: 0;
+    background: $dark;
+
+    .list__tile__title {
+      font-size: 14px;
+    }
+  }
+}
+
+.navbar {
+  .logo-container {
+    &.centered {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: drop-shadow(0 0 8px rgba(black, 0.5));
+    }
+  }
+
+  .user-balance {
+    .label {
+      font-size: 12px;
+    }
+    .btn {
+      width: unset;
+      height: unset;
+    }
+  }
+}
+
+// Custom Elements Styling
+button.btn,
+a.btn,
+span.btn {
+  text-transform: unset;
+  font-weight: 600;
+
+  &.btn--large.icon-right .icon-svg {
+    left: -15px;
+    position: relative;
+  }
+
+  &.fl-r {
+    float: right;
+  }
+}
+
+.has-glow {
+  box-shadow: 0 0 10px rgba($text, 0.6) !important;
+  &.primary {
+    box-shadow: 0 0 10px rgba($primary, 0.6) !important;
+  }
+  &.secondary {
+    box-shadow: 0 0 10px rgba($secondary, 0.6) !important;
+  }
+  &.tertiary {
+    box-shadow: 0 0 10px rgba($tertiary, 0.6) !important;
+  }
+  &.quaternary {
+    box-shadow: 0 0 10px rgba($quaternary, 0.6) !important;
+  }
+
+  &.btn--disabled {
+    box-shadow: 0 0 8px rgba(grey, 0.6) !important;
+  }
+}
+
+.icon.logo {
+  width: 15px;
+  margin-right: 5px;
+  color: $primary;
+
+  svg {
+    width: inherit;
+    path {
+      fill: currentColor;
+    }
+  }
+
+  &.size-2 {
+    width: 20px;
+  }
+
+  &.size-3 {
+    width: 25px;
+  }
+
+  &.stroke-white {
+    svg path {
+      fill: white;
+    }
+  }
+}
+
+.logo-container {
+  width: 50px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+
+  &.size-2x {
+    width: 100px;
+  }
+
+  &.size-3x {
+    width: 150px;
+  }
+
+  svg {
+    width: inherit;
+  }
+
+  &:not(.default) svg path {
+    fill: currentColor;
+  }
+
+  &.branded {
+    svg g.loot path {
+      fill: $text;
+    }
+    svg g.vgo path {
+      fill: $primary;
+    }
+  }
+}
+
+footer.footer {
+  .affiliation {
+    opacity: 0.2;
+  }
+  .links-ctn {
+    margin-top: -5px;
+    justify-content: flex-end;
+  }
+  .fa {
+    cursor: pointer;
+    color: $primary;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba($primary, 0.6);
+    }
+  }
+}
+
+/* input edits */
+
+.input-group__counter,
+.input-group__input input,
+.number,
+.slider__thumb--label span {
+  font-family: $family-secondary;
+}
+
+// typography elements
+blockquote:not(:last-child),
+dl:not(:last-child),
+ol:not(:last-child),
+p:not(:last-child),
+pre:not(:last-child),
+table:not(:last-child),
+ul:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+ul {
+  list-style: disc outside;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+pre {
+  background: $dark;
+  overflow-x: auto;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  word-wrap: normal;
+  color: #c1c1c1;
+  font-size: 0.875em;
+}
+
+dl {
+  dd {
+    margin-left: 2em;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tbody tr {
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: $dark + 10;
+    }
+  }
+
+  thead td,
+  thead th {
+    text-align: left;
+    border-bottom: 3px solid $text;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+  }
+
+  td {
+    border: 1px solid $text;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+  }
+}
+
+blockquote {
+  background-color: $dark;
+  border-left: 5px solid $primary;
+  padding: 1.25em 1.5em;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px !important;
+  background-color: $secondary !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $darker - 10 !important;
+}
+
+// transition
+.scale-enter-active {
+  animation: scale-in 0.3s ease;
+}
+.scale-leave-active {
+  animation: scale-out 0.3s ease;
+}
+
+// .scale-move {
+//   transition: all 0.5s ease;
+// }
+
+@keyframes scale-in {
+  from {
+    transform: scale(0) rotate(-30deg);
+  }
+  to {
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes scale-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.scaleSlide-enter-active,
+.scaleSlide-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+.scaleSlide-enter,
+.scaleSlide-leave-to {
+  max-height: 0;
+}
+
+.clipCircleDown-enter-active {
+  animation: clipCircleDownIn 0.7s ease;
+}
+.clipCircleDown-leave-active {
+  animation: clipCircleDownOut 0.7s ease;
+}
+
+// .clipCircleUp-enter-active {
+//   animation: clipCircleDownIn 0.7s ease;
+// }
+// .clipCircleUp-leave-active {
+//   animation: clipCircleDownOut 0.7s ease;
+// }
+
+@keyframes clipCircleDownOut {
+  0% {
+    clip-path: circle(100% at 50% 50%);
+  }
+  20% {
+    clip-path: circle(20% at 50% 50%);
+  }
+  50% {
+    transform: translateY(-50px);
+    clip-path: circle(20% at 50% 50%);
+  }
+  100% {
+    transform: translateY(100%);
+    clip-path: circle(0% at 50% 50%);
+  }
+}
+
+@keyframes clipCircleDownIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes pulse-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pulse-opacity {
+  animation: pulse-opacity 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-live {
+  1% {
+    width: 51px;
+    height: 51px;
+    margin-left: -25.5px;
+    margin-top: -25.5px;
+    border-color: #bbb;
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+    margin-left: -400px;
+    margin-top: -400px;
+    border-color: #333;
+  }
+}
+
+// @keyframes clipCircleUp {
+//   0% {
+//     clip-path: circle(100% at 50% 50%);
+//   }
+//   20% {
+//     clip-path: circle(20% at 50% 50%);
+//   }
+//   50% {
+//     transform: translateY(50px);
+//     clip-path: circle(20% at 50% 50%);
+//   }
+//   100% {
+//     transform: translateY(-100%);
+//     clip-path: circle(0% at 50% 50%);
+//   }
+// }
+
+.scaleIn-enter-active,
+.scaleIn-leave-active {
+  transform: scale(1);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.scaleIn-enter,
+.scaleIn-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.scaleIn-move {
+  transition: transform 0.3s ease;
+}
+.fade-move {
+  transition: transform 0.3s ease;
+}
+
+.scaleCirclular-enter-active,
+.scaleCirclular-leave-active {
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+.scaleCirclular-enter,
+.scaleCirclular-leave-to {
+  opacity: 0;
+  border-radius: 50%;
+  transform: scale(0.1);
+}
+
+.scaleY {
+  &-enter,
+  &-leave-to {
+    // opacity: 0;
+    background: $primary !important;
+    transform: scaleY(0);
+  }
+  &-enter-active,
+  &-leave-active {
+    transform: scaleY(1);
+    background: $primary !important;
+    transition: all 0.3s ease-in-out;
+  }
+  // &-move {
+  //   transition: all 0.5s ease-in-out;
+  // }
+}
+
+.insert {
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+  &-enter {
+    transform: translateX(-100%);
+  }
+  &-leave-to {
+    transform: translateX(100%);
+  }
+  &-enter-active {
+    transition: opacity 0.6s linear, transform 0.6s cubic-bezier(0.68, -0.12, 0, 1);
+  }
+  &-leave-active {
+    transition: opacity 0.6s linear, transform 0.6s cubic-bezier(0.68, -0.12, 0, 1);
+  }
+  &-move {
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: 0.3s;
+}
+.slide-enter {
+  transform: translateY(100%);
+}
+.slide-leave-to {
+  transform: translateY(-100%);
+}
+
+.application.scaleIn-enter-active {
+  transition-delay: 0.5s;
+}
+
+.navigation-drawer--close {
+  opacity: 0;
+}
+.navigation-drawer--open {
+  opacity: 1;
+}

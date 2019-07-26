@@ -1,0 +1,31 @@
+{
+    "apps": [{
+        "name": "case-site-backend",
+        "script": "app.js",
+
+        "instances": 1,
+        "exec_mode": "fork",
+        "watch": false,
+        "max_memory_restart": "8000M",
+        "max_memory_limit": "8000M",
+
+        "env": {
+            "NODE_ENV": "production"
+        },
+
+        "log_date_format": "YYYY-MM-DD HH:mm:ss",
+        "error_file": "logs/err.log",
+        "out_file": "logs/out.log",
+        "combine_logs": true,
+        "pid_file": "app.pid",
+
+        "min_uptime": 10e3,
+        "listen_timeout": 15e3,
+        "kill_timeout": 10e3,
+        "wait_ready": true,
+        "max_restarts": 2,
+        "restart_delay": 0,
+        "autorestart": true,
+        "vizion": false
+    }]
+}

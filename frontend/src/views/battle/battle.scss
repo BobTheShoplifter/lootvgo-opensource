@@ -1,0 +1,109 @@
+@import '../../styles/variables.scss';
+.loading {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.user-column {
+  min-width: 230px;
+  max-width: 600px;
+}
+
+.rounds {
+  .rounds-list {
+    transition: transform 0.6s ease-in-out;
+    .round {
+      width: 64px;
+      transition: opacity 0.3s ease;
+      opacity: 0.4;
+      &.active {
+        opacity: 1;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      img.case {
+        width: 64px;
+        margin-bottom: -20px;
+      }
+    }
+  }
+}
+
+.game {
+  .user-ctn {
+    align-items: stretch;
+  }
+  .spinner-ctn {
+    height: 350px !important;
+    max-height: 350px;
+    .user {
+      right: 0;
+      top: 0;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      img.avatar {
+        max-width: 30px;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .status {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .user {
+    img {
+      max-width: 40px;
+    }
+  }
+}
+
+.price-flyoff {
+  bottom: -100%;
+  opacity: 0;
+}
+
+.winner {
+  .progress-circular {
+    color: $success !important;
+  }
+}
+
+.items-ctn {
+  width: 100%;
+  overflow: hidden;
+  &:after {
+    pointer-events: none;
+    content: ' ';
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, $darker, rgba($darker, 0));
+  }
+}
+
+.items {
+  max-height: 200px;
+  overflow-y: auto;
+  .item {
+    width: 100%;
+    overflow: hidden;
+    border-left: 4px solid;
+    .name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    img.icon {
+      max-width: 100px;
+      margin: -20px 0;
+    }
+  }
+}

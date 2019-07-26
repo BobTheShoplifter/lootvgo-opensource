@@ -1,0 +1,197 @@
+@import '../../../../styles/variables.scss';
+
+.inner.chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .hover-hint {
+    z-index: 1;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+    box-shadow: 0 0 10px rgba(black, 0.5);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .messages {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    will-change: transform;
+
+    &:hover {
+      .hover-hint {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    .message {
+      &:last-child {
+        margin-bottom: 0 !important;
+        .msg-text {
+          margin-bottom: 8px;
+        }
+      }
+
+      &.highlight {
+        border-left: 5px solid $secondary;
+
+        .inner {
+          background: rgba($secondary, 0.1);
+        }
+      }
+
+      .inner {
+        align-items: flex-start;
+        line-break: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+
+        .meta {
+          flex: 1;
+        }
+
+        &.announcement {
+          border-left: 5px solid $danger;
+        }
+
+        .msg-text {
+          color: rgba($text, 0.8);
+          word-break: break-word;
+        }
+      }
+
+      /deep/ img.emoji {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:first-child {
+        margin-top: 8px;
+      }
+
+      img.avatar {
+        max-width: 45px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .input {
+    box-shadow: 0 0 10px black;
+    position: relative;
+
+    .autocomplete {
+      overflow: hidden;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+
+      span {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-shrink: 0;
+
+        .title {
+          flex-shrink: 0;
+
+          &.active {
+            background: rgba($dark + 10, 0.5);
+          }
+        }
+
+        &:hover {
+          .title {
+            background: none !important;
+          }
+        }
+      }
+
+      img.avatar {
+        width: 100%;
+        max-width: 24px;
+        border-radius: 5px;
+      }
+    }
+
+    textarea {
+      flex: 1;
+      resize: none;
+      outline: none !important;
+      padding: 10px;
+    }
+
+    .input-group .icon {
+      cursor: pointer;
+
+      &:hover {
+        color: rgba($primary, 0.7) !important;
+      }
+    }
+
+    .bar {
+      position: relative;
+      z-index: 2;
+
+      .btn {
+        height: auto;
+        min-width: auto;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.mod,
+.verified,
+.admin {
+  .inner .msg-text {
+    color: $text;
+  }
+}
+
+.admin {
+  color: $primary;
+}
+
+.mod .tag {
+  color: $success;
+}
+
+.verified .icon {
+  color: $info;
+}
+
+.no-auth {
+  box-shadow: 0 0 10px black;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: height 0.3s;
+}
+.fade-enter-active {
+  height: 40px;
+}
+.fade-enter,
+.fade-leave-active {
+  height: 0;
+}
+.fade-leave {
+  height: 40px;
+}
+
+.fade-move {
+  transition: all 0.3s ease;
+}
+
+.wax-icon {
+  fill: $primary;
+  width: 60px;
+  vertical-align: top;
+}

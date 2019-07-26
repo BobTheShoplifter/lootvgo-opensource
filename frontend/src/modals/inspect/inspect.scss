@@ -1,0 +1,152 @@
+@import '../../styles/variables.scss';
+
+.card {
+  position: relative;
+  overflow: visible;
+
+  .card__text {
+    padding: 0;
+  }
+  .item-float {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .item-img {
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%) translateY(-50%);
+
+      img {
+        max-width: 100%;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform 0.8s ease-out, opacity 0.5s ease;
+        filter: drop-shadow(0 0 30px rgba(black, 0.7));
+
+        &.loaded {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+    .item-info {
+      position: relative;
+      z-index: 99;
+      margin-top: -50px;
+      text-shadow: 0 0 8px black;
+
+      .name {
+        font-size: 22px;
+      }
+
+      .rarity {
+        border-radius: 25px;
+      }
+    }
+  }
+
+  video {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .content {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 40% 20px 20px 20px;
+
+    .label {
+      font-size: 12px;
+    }
+
+    .pricing {
+      .label {
+        font-size: 14px;
+      }
+      .btn {
+        font-size: 12px;
+      }
+    }
+
+    .stickers {
+      img {
+        width: 20%;
+      }
+    }
+  }
+
+  .float {
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid $tertiary;
+      margin-left: -15px;
+      border-radius: 25px;
+      margin-top: 5px;
+      filter: drop-shadow(0 0 10px black);
+      z-index: 5;
+      position: absolute;
+      bottom: 5px;
+    }
+
+    .float-bar {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .bar {
+        height: 6px;
+        float: left;
+
+        &.fn {
+          background-color: green;
+          width: 7%;
+        }
+
+        &.mw {
+          background-color: rgb(92, 184, 92);
+          width: 8%;
+        }
+
+        &.ft {
+          background-color: rgb(240, 173, 78);
+          width: 23%;
+        }
+
+        &.ww {
+          background-color: rgb(217, 83, 79);
+          width: 7%;
+        }
+
+        &.bs {
+          background-color: rgb(153, 58, 56);
+          width: 55%;
+        }
+      }
+    }
+  }
+
+  .card__actions {
+    z-index: 9;
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, minimal-ui"
+    />
+
+    <title>CaseVGO - Unbox the skins of your dreams</title>
+    <meta
+      name="description"
+      content="CaseVGO is the best way to open your vCases out there. Participate in social activities while watching crates bust open."
+    />
+    <meta name="keywords" content="CaseVGO, steam, csgo, skins, unboxing, case, vgo, vcase, opskins, watchgamestv," />
+
+    <!-- SEO Adjustments -->
+    <meta name="Publisher" content="CaseVGO" />
+    <meta name="Revisit-After" content="7 Days" />
+    <meta name="distribution" content="LOCAL" />
+    <meta name="Robots" content="INDEX, FOLLOW" />
+    <meta name="page-topic" content="CaseVGO" />
+    <meta name="YahooSeeker" content="INDEX, FOLLOW" />
+    <meta name="msnbot" content="INDEX, FOLLOW" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="Rating" content="General" />
+    <meta name="allow-search" content="yes" />
+    <meta name="googlebot" content="noodp" />
+    <meta name="slurp" content="noydir" />
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="qC6JYU5zWAeYqlA7KbSqOEaM47e_ljkx4gmp0IjUGz0" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="CaseVGO" />
+    <meta
+      property="og:description"
+      content="CaseVGO is the best way to open your vCases out there. Participate in social activities while watching crates bust open."
+    />
+
+    <!-- Add to home screen for Android and modern mobile browsers -->
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json" />
+    <meta name="theme-color" content="#1a1c20" />
+
+    <!-- favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png"
+    />
+
+    <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"/><![endif]-->
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="test" />
+    <link
+      rel="apple-touch-icon"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="mask-icon"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg"
+      color="#1a1c20"
+    />
+
+    <!-- Add to home screen for Windows -->
+    <meta
+      name="msapplication-TileImage"
+      content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/mstile-150x150.png"
+    />
+    <meta name="msapplication-TileColor" content="#1a1c20" />
+
+    <!-- Other assets -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600,700,900"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Preload assets into service worker -->
+    <% for (var chunk of webpack.chunks) { for (var file of chunk.files) { if (file.match(/\.(js|css)$/)) { %>
+    <link
+      rel="<%= chunk.initial?'preload':'prefetch' %>"
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+      as="<%= file.match(/\.css$/)?'style':'script' %>"
+    />
+    <% }}} %>
+  </head>
+
+  <body ondragstart="return false">
+    <script>
+      !(function() {
+        var e = function(e, a) {
+            a || (a = window.location.href), (e = e.replace(/[\[\]]/g, '\\$&'))
+            var n = new RegExp('[?&]' + e + '(=([^&#]*)|&|#|$)').exec(a)
+            return n ? (n[2] ? decodeURIComponent(n[2].replace(/\+/g, ' ')) : '') : null
+          },
+          a = {
+            url: 'https://opskins.com/affiliate_data.php',
+            params: {
+              id: {
+                default: (function() {
+                  return window.location.hostname.replace(/[^0-9a-z]/gi, '').replace('www', '')
+                })()
+              },
+              marketing_source: { default: e('refid') || 'none' },
+              source: {
+                default: function() {
+                  return document.referrer || 'Direct'
+                }
+              },
+              medium: { default: '' },
+              campaign: { default: '' },
+              content: { default: '' },
+              aff_id: { default: '2' },
+              offer_id: { default: '4' },
+              trans_id: {
+                default: function() {
+                  return a.generateTransID()
+                }
+              },
+              gclid: { default: '' },
+              msclkid: { default: '' },
+              aid: { default: '' }
+            },
+            init: function() {
+              var e = a.buildParams()
+              e.indexOf('marketing_source') > -1 &&
+                (window.onload = function() {
+                  var n = document.createElement('iframe')
+                  ;(n.style.display = 'none'), (n.src = a.url + e), document.body.appendChild(n)
+                })
+            },
+            buildParams: function() {
+              var n = '?'
+              for (var r in a.params) {
+                if (a.params.hasOwnProperty(r))
+                  if (null !== (t = e(r))) n = n + r + '=' + t + '&'
+                  else if ('' !== a.params[r].default) {
+                    var t
+                    if ('function' != typeof a.params[r].default) n = n + r + '=' + a.params[r].default + '&'
+                    else n = n + r + '=' + (t = a.params[r].default()) + '&'
+                  }
+              }
+              return n
+            },
+            generateTransID: function() {
+              return (
+                'marketing' +
+                (function(e, a) {
+                  for (var n = '', r = e; r > 0; --r) n += a[Math.floor(Math.random() * a.length)]
+                  return n
+                })(21, '0123456789abcdefghijklmnopqrstuvwxyz')
+              )
+            }
+          }
+        a.init()
+      })()
+    </script>
+    
+    <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '368692860613435');
+  fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=368692860613435&ev=PageView&noscript=1"
+/></noscript>
+
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+      fbq('init', '2251510141829882')
+      fbq('track', 'PageView')
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=2251510141829882&ev=PageView&noscript=1"
+      />
+    </noscript>
+
+    <noscript>
+      This website requires your browser to have JavaScript enabled/support. Please update your browser to a modern
+      version.
+    </noscript>
+    <div id="app"></div>
+    <!-- Todo: only include in production -->
+    <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "indentation": 2,
+    "max-empty-lines": 2,
+    "block-closing-brace-newline-before": "always",
+    "no-descending-specificity": null
+  }
+}

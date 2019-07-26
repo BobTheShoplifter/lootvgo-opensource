@@ -1,0 +1,496 @@
+{
+  "languageString": "English",
+  "languageStringNative": "English",
+  "contribute": "Contribute!",
+  "faq": [
+    {
+      "category": "game",
+      "question": "How does the game work?",
+      "answer": "DinnerSpinner is a real-time social wheel game powered by PUBG items. It works just like the classic money wheel games that can be found on the gaming floors of land based casinos, which are hugely popular given that they are based entirely on luck and require no special skills or strategy to play. All you need to do is place a bet on where you think the wheel will spin to a stop and wait for the spin. If the wheel stops on your chosen number, you become an instant winner."
+    },
+    {
+      "category": "game",
+      "question": "How do I play?",
+      "answer": "The Wheel is separated into 54 colourful segments numbered 1, 2, 5, 10, 20 and 40. Once you have funded your on site balance, all you need to do is click the betting chip with the amount you're comfortable betting with, and then choose the number you wish to bet on. If any bets are found in the game, the countdown is started. When it reaches zero, the wheel will spin and stop on a field, determining whether you are a winner. If you’re lucky enough to win, your winning money will automatically be credited to your account. After each spin, you will have the option to bet again, or leave the game. If you’re feeling sociable, you can chat with other like-minded players on the right-hand side of the screen."
+    },
+    {
+      "category": "game",
+      "question": "How much can I win?",
+      "answer": "Our game has a theoretical RTP (return to player) of 95.58%, with minimum bets starting at just {minBet}, making it suitable for recreational punters and high rollers. The amount you can win on the money wheel depends on the size of your bet and the number you have bet on. Each number appears on the wheel a different number of times, with the less frequently occurring numbers resulting in the highest payouts. Your winnings are calculated like so: your bet * the field + your bet. Its simple!"
+    },
+    {
+      "category": "game",
+      "question": "What are those multipliers?",
+      "answer": "When the wheel rolls 2x or 7x, your bets are multiplied by that field and the wheel is spun again. These can stack on top of eachother leading to masive jackpot rounds!"
+    },
+    {
+      "category": "game",
+      "question": "Can I play on my phone/tablet?",
+      "answer": "Of course! Dinner Spinner uses cutting-edge PWA technology allowing you to install the website on your phone to enjoy Dinner Spinner in its fullscreen glory! The website is fully responsive down to 320px device width, enjoy Dinner Spinner at home or on the go, the quality never changes."
+    },
+    {
+      "category": "game",
+      "question": "What is max profit?",
+      "answer": "The max profit property is a limit on how much profit you can make per round. This limit is currently set to {limit}, meaning if your winnings are higher than {limit}, you get {limit} + your bet added to your balance."
+    },
+    {
+      "category": "chat",
+      "question": "Are there chat rules?",
+      "answer": "Yes! They can be found under the send button of where you type your message."
+    },
+    {
+      "category": "deposit",
+      "question": "How do I deposit?",
+      "answer": "Start by setting up your Steam URL by clicking on your profile name (top right), then click settings. Click on the “Deposit” tab or the + next to your balance, select the skins you would like to deposit and click the deposit button. A bot will then send you a trade offer with your selected item(s) and a security code. Make sure you match this with the one on the sidebar! Once all steps are completed, your balance will be credited and you're ready to play."
+    },
+    {
+      "category": "deposit",
+      "question": "How are the prices determined?",
+      "answer": "We use an external pricing service and our own overrides. Prices are taken from market averages and some small variations to keep the trades fair."
+    },
+    {
+      "category": "withdraw",
+      "question": "How do I withdraw my balance?",
+      "answer": "You can withdraw your balance through the withdraw button in the navbar. You are then presented with a wide range of items that you can add to your cart. Are you looking for something specific? We have a filter for that, play around and select what best suits your needs."
+    },
+    {
+      "category": "troubleshooting",
+      "question": "I have a problem, what do I do?",
+      "answer": "Don't worry! If your problem isn't answered by one of these FAQ questions, you can contact support! If our support is online at the time being, you will be put into a live chat with them automatically to resolve your issue right away. If we are offline, your ticket will receive a response within 48 hours. Please be patient and only send one ticket per issue."
+    },
+    {
+      "category": "troubleshooting",
+      "question": "What happens if I get disconnected?",
+      "answer": "No problem. Did you place a bet? If yes, your bet will go through like normal and any winnings will then be added to your balance. If didn't, there's is nothing to worry about, you will be reconnected as soon as you have an active internet connection. The website will show you a message alerting you to the fact, so don't ever worry."
+    },
+    {
+      "category": "troubleshooting",
+      "question": "The game is lagging!",
+      "answer": "Is your pc or mobile device up to standard? Although we try our best to cater to all devices some devices may not cut it. Make sure you are running the latest version of your browser and that your browser is modern. If that still doesn't cut it, please check the Game Settings (found in your settings) to turn on various performance features."
+    },
+    {
+      "category": "fairness",
+      "question": "Was that spin fair?",
+      "answer": "Absolutely. DinnerSpinner has one of the best provably fair systems out there. Check out the Provably Fair page (found in our footer) for more info!"
+    },
+    {
+      "category": "promotion",
+      "question": "I'm interested in a sponsorhip, how do I get sponsored?",
+      "answer": "Do you have a large social media following? If you do, please contact our Twitter DM's. A link to our twitter can be found in the footer."
+    },
+    {
+      "category": "addiction",
+      "question": "What if I can't stop playing?",
+      "answer": "Please play responsibly, always take a break and never spend what you can't. If any of these issues arise please seek help from these links and seek help from a qualified individual. Gamblers Anonymous: http://www.gamblersanonymous.org/ga/"
+    }
+  ],
+  "navbar": {
+    "items": {
+      "play": "Play",
+      "help": "Help",
+      "fair": "Fair",
+      "withdraw": "Withdraw"
+    },
+    "labels": {
+      "balance": "Your Balance",
+      "volumeAll": "Overall Volume",
+      "volumeMusic": "The Smoothest of Jazz"
+    },
+    "user": {
+      "level": "Level {num}",
+      "settings": "Settings",
+      "history": "Trade History",
+      "logout": "Log out"
+    }
+  },
+  "sidebar": {
+    "tabs": {
+      "chat": "Chat",
+      "deposit": "Deposit",
+      "affiliates": "Affiliates"
+    },
+    "chat": {
+      "hoverHint": "Chat Scrolling Paused",
+      "placeholder": "Enter your message here..",
+      "rules": {
+        "title": "Chat Rules",
+        "description": "Please read these rules carefully before posting in chatrooms.",
+        "list": [
+          "Only speak English.",
+          "Listen to moderators and admins.",
+          "Do NOT advertise your affiliate code/link. This counts for other websites too.",
+          "Don't spam, harass or be offensive to other players. Respect eachother.",
+          "Don't discuss or promote trades you’re offering.",
+          "Don't advertise other services or websites, including youtube/twitch channels.",
+          "Don't beg for tips/credits/money.",
+          "Don't post inappropriate links, it will result in a ban."
+        ],
+        "close": "Close",
+        "agree": "I agree",
+        "warning": "Breaking any of these rules will result in a purge/mute/ban. You have been warned."
+      },
+      "agree": "You must agree to the chat rules before sending messages.",
+      "footer": {
+        "users": "Users Online"
+      },
+      "toasts": {
+        "errors": {
+          "send": "Couldn't Send Message",
+          "get": "Couldn't Load Chat Messages"
+        }
+      }
+    },
+    "deposit": {
+      "title": "Your Inventory",
+      "description": "This is your Steam inventory. Select up to {limit} items you want to deposit at once. Once deposited they are automatically turned into site balance. Make sure steam is online before sending your trade!",
+      "stats": {
+        "inventoryValue": "Inventory Value",
+        "selectionValue": "Selection Value",
+        "selectionCount": "Items Selected"
+      },
+      "steamOnline": "Steam is online",
+      "steamDelayed": "Steam is delayed",
+      "steamOffline": "Steam is offline",
+      "depositAmount": "Deposit {amount}",
+      "trade": {
+        "credited": "Your account has been credited {amount}.",
+        "open": "Open Trade Offer",
+        "securityCode": "Your security code is {code}"
+      },
+      "toasts": {
+        "errors": {
+          "deposit": "Couldn't Request Trade",
+          "load": "Couldn't Load Inventory"
+        }
+      }
+    },
+    "affiliates": {
+      "title": "Affiliates"
+    }
+  },
+  "game": {
+    "progress": {
+      "roundHash": "Round Hash"
+    },
+    "bet": {
+      "previous": "Previous Rolls",
+      "header": {
+        "title": "Place your bets",
+        "bet": "Your Bet"
+      },
+      "buttons": {
+        "undo": "Undo",
+        "tooltip": "Tip: Right click (hold on mobile) to clear all bets.",
+        "betAll": "Bet On All",
+        "repeat": "Repeat",
+        "double": "Double"
+      },
+      "autorepeatActive": "Auto repeat is active.",
+      "pays": "pays"
+    },
+    "entries": {
+      "header": {
+        "title": "Players this round",
+        "total": "Total Bet"
+      },
+      "noBets": "No bets yet, be the first!"
+    },
+    "toasts": {
+      "errors": {
+        "history": "Couldn't Load Game History",
+        "game": "Couldn't Get Game State",
+        "bet": "Cannot Place Bet",
+        "max": {
+          "title": "Maximum Table Limit Reached",
+          "text": "The sum of your bets cannot exceed {amount}."
+        }
+      },
+      "win": {
+        "title": "WINNER WINNER CHICKEN DINNER!",
+        "text": "You won {amount} this round."
+      }
+    },
+    "tour": [
+      {
+        "title": "Welcome to DinnerSpinner!",
+        "text": "Let's show you around the game so you can become a pro right away."
+      },
+      {
+        "title": "Bet Interface",
+        "text": "This is the bet interface. You use it to participate in the game."
+      },
+      {
+        "title": "Bet Chips",
+        "text": "First, click on a chip with a comfortable amount to bet with."
+      },
+      {
+        "title": "Fields",
+        "text": "You can now bet on as many fields as you please. Each field pays your bet times the field's number plus your bet. If you have some balance, go ahead and try it out, your bets won't be sent."
+      },
+      {
+        "title": "Undo, Double, Repeat",
+        "text": "You can bet on all fields, undo, double or repeat your bets with ease."
+      },
+      {
+        "title": "Example",
+        "text": "A little complicated? If you bet 10 credits on 5, you have the chance to win 50 + your 10 bet back. See, it's easy!"
+      },
+      {
+        "title": "Countdown & Round Info",
+        "text": "Make sure you finish all your bets before the countdown hits 0! You can also see the round status here."
+      },
+      {
+        "title": "The Wheel",
+        "text": "There it is, the wheel in all its glory. Once the countdown hits 0, it will start spinning and land on a field. Let's spin it."
+      },
+      {
+        "title": "Multiplier Rounds",
+        "text": "What are those 2x/7x fields, you ask? Your key to a potential jackpot! When a multiplier field is hit, the wheel will spin again and multiply every field by 2x/7x."
+      },
+      {
+        "title": "While the wheel is spinning..",
+        "text": "On a multiplier round, the field's payouts are multiplied by the multiplier. Since we hit 2x, this means your 50 could now turn into 100 (+ 10). Multiplier rounds can even stack, allowing for crazy jackpots."
+      },
+      {
+        "title": "That's it!",
+        "text": "You now know how DinnerSpinner works. If you have any more questions, check out the Help page!"
+      },
+      {
+        "title": "Didn't catch everything?",
+        "text": "You can always restart the tour here. Have fun!"
+      }
+    ],
+    "status": {
+      "spinning": "Spinning..",
+      "spinningIn": "Spinning in {num}s",
+      "waitingRound": "Waiting for a new round...",
+      "waitingBets": "Waiting for bets...",
+      "confirmingBets": "Confirming Bets"
+    }
+  },
+  "help": {
+    "title": "Help & Support",
+    "description": "Is something broken? Don't understand how the game works? No worries, read through our FAQ.",
+    "descriptionOnline": "Our live support agents are online to help you in case the FAQ doesn't answer your question.",
+    "descriptionOffline": "You can also contact us if the FAQ leaves you wanting more. Your ticket will be answered as soon as possible.",
+    "search": "Enter search keywords...",
+    "categories": "Categories",
+    "supportOnline": "Live Support Online!",
+    "supportOffline": "Contact Support",
+    "noQuestions": "No questions were found :("
+  },
+  "withdraw": {
+    "title": "Withdraw",
+    "description": "Ready to collect your profits? Cashout your balance for PUBG items!",
+    "cart": "Your Cart",
+    "cartEmpty": "Select items from the inventory.",
+    "withdraw": "Withdraw {amount}",
+    "filter": {
+      "title": "Filter",
+      "labels": {
+        "price": "Price",
+        "crates": "Crates",
+        "rarities": "Rarities",
+        "type": "Item Types",
+        "subtype": "Item Subtypes"
+      },
+      "select": "Select",
+      "selectHint": "Select one or more.",
+      "clear": "Clear Filter"
+    }
+  },
+  "inventory": {
+    "noItems": "No items found.",
+    "sorting": {
+      "sortBy": "Sort by",
+      "price": "price",
+      "dateAdded": "date received",
+      "order": "order",
+      "old": "old",
+      "new": "new",
+      "low": "low",
+      "high": "high",
+      "search": "Search..."
+    },
+    "toasts": {
+      "errors": {
+        "select": "You cannot select more than {amount} items."
+      }
+    }
+  },
+  "modals": {
+    "inspect": {
+      "category": "Category",
+      "rarity": "Rarity",
+      "type": "Type",
+      "subtype": "Subtype",
+      "pricing": {
+        "title": "Alternative Pricing Services",
+        "steam": "Steam Market",
+        "opskins": "OPSkins",
+        "bitskins": "BitSkins"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "tradeURL": {
+        "label": "Trade URL",
+        "help": "This is your Steam Trade Offer URL, click {0} to find it.",
+        "here": "here",
+        "validation": {
+          "required": "Trade URL is required",
+          "invalid": "This Trade URL is not valid, please copy and paste it from Steam."
+        }
+      },
+      "local": {
+        "title": "Local Settings",
+        "subtitleGame": "Game Settings",
+        "description": "These settings only affect your current device and are saved automatically.",
+        "disableAnim": "Disable Inspect Modal Animations",
+        "vibrantItems": "Vibrant Item Icons",
+        "lowCPU": "Low CPU Mode (requires refresh)",
+        "noIdle": "No Idle Spin Animation (affects next round)",
+        "autorepeat": "Auto Repeat Last Bets"
+      },
+      "toasts": {
+        "errors": {
+          "save": "Could Not Save Trade URL"
+        },
+        "save": {
+          "title": "Trade URL Updated",
+          "text": "Your Trade URL has been updated successfully."
+        }
+      }
+    }
+  },
+  "login": {
+    "button": "Login via",
+    "toChat": "You must login to send chat messages.",
+    "toBet": "You must login to be able to place bets."
+  },
+  "errors": {
+    "UnknownError": "Internal error, please contact support as soon as possible.",
+    "OK": "Success",
+    "Fail": "Internal error, please contact support as soon as possible.",
+    "InternalError": "Internal error, please contact support as soon as possible.",
+    "DatabaseError": "Database error, please contact support as soon as possible.",
+    "NotChanged": "You didn't provide any changes.",
+    "CannotUseChat": "You need to open at least 1 case to chat.",
+    "UserMuted": "You are muted for {time} seconds",
+    "InsufficientPrivilege": "You do not have the required permission for this action.",
+    "RateLimited": "You are on a spam cooldown. Please try again later.",
+    "InvalidSyntax": "Internal error, please contact support as soon as possible.",
+    "MissingParam": "Internal error, please contact support as soon as possible.",
+    "InvalidParam": "Internal error, please contact support as soon as possible.",
+    "NotInWhitelist": "You are not in the whitelist.",
+    "Maintenance": "Website is undergoing maintenance, please try again later.",
+    "Banned": "You are banned, please contact support.",
+    "NotLoggedIn": "You need to be logged in to perform this action.",
+    "AdminBlocked": "This action has been disabled by an admin, please try again later.",
+    "LowBetSum": "Please bet at least 60% of your total deposit ({betLimit} needed) before attempting to withdraw.",
+    "WithdrawLimit": "You cannot withdraw more than {withdrawLimit}.",
+    "CannotWithdrawAndBet": "You cannot withdraw and bet at the same time.",
+    "InsufficientBalance": "You do not have enough keys for this action, please transfer more to your ExpressTrade account.",
+    "GameClosed": "The current game is closed.",
+    "MinimumReached": "Your bet is lower than our minimum bet limit.",
+    "MaximumReached": "Your bet is higher than the bet limit.",
+    "InvalidCommand": "Invalid chat command.",
+    "ExpiredAuthToken": "Expired authentication token, please refresh.",
+    "InvalidAuthToken": "Invalid authentication token, please log out and back in.",
+    "AlreadyTrading": "There already is a trade pending on your account, please complete it or try again later.",
+    "DuplicateItems": "One or more items are duplicates. Please refresh your inventory.",
+    "MissingTradeUrl": "Please set your Trade URL in your settings.",
+    "InvalidTradeUrl": "Your Trade URL is invalid, please copy it directly from steam.",
+    "NoOPAccount": "There is no ExpressTrade account associated with this Steam account. Please log into WAX.com and set one up.",
+    "OPAPIError": "There was an error with WAX, please try again later.",
+    "OPAPINotEnoughFunds": "You don't have enough funds for this action.",
+    "OPAPIExceedMaxKeys": "You have gone over the maximum key limit.",
+    "OPAPIKeysPurchasedNoTransfer": "The keys were purchased but not transferred to ExpressTrade.",
+    "OPAPIUnableToBuyKeys": "THe keys were purchased but not transferred.",
+    "OPAPIExceedMaxItems": "Too many items provided/selected.",
+    "OPAPIItemsAreNotAbleToSell": "One or more items cannot be sold.",
+    "OPAPIInstantSellUnknownItems": "One or more items doesn't exist.",
+    "OPAPIInstantSellError": "There was an error with WAX, please try again later.",
+    "NotEnoughKeys": "You don't have enough battle keys.",
+    "InvalidItems": "The items you selected are invalid, please refresh your inventory.",
+    "BlacklistedItem": "One or more items are blacklisted. Please refresh your inventory.",
+    "APIFetchError": "A third party resource failed to load.",
+    "APIInvalidResponse": "A third party resource failed to load.",
+    "APIError": "A third party resource failed to load.",
+    "SteamError": "Steam returned an error, please try again later.",
+    "NoTradeBot": "Internal error, please try again.",
+    "TradeBotsFull": "Internal error, please try again later.",
+    "TradeBotsBusy": "Internal error, please try again later.",
+    "BotOffline": "Internal error, please try again.",
+    "BotCannotTrade": "Internal error, please contact support.",
+    "UserCannotTrade": "You are unable to trade on steam.",
+    "InternalOutdatedTradeLink": "Internal error, please try again later.",
+    "UserOutdatedTradeLink": "Your Trade URL is outdated, please set it in settings.",
+    "PrivateBotInv": "Internal error, please try again later.",
+    "PrivateUserInv": "Your inventory is set to private, please set it to public.",
+    "BotTradeBanned": "Internal error, please contact support and bring tissues.",
+    "UserTradeBanned": "You have a Steam trade ban.",
+    "TradeBotEscrow": "Internal error, please contact support.",
+    "UserEscrow": "You have escrow, please make sure your mobile authenticator has been active for 14 days.",
+    "StorageBotEscrow": "Internal error, please contact support.",
+    "NameCheckFailed": "Your name does not meet the requirements for name bonuses.",
+    "NewDevice": "Internal error, please contact support.",
+    "OfferLimitExceeded": "Internal error, please try again later.",
+    "SteamItemServerUnavailable": "Steam is unavailable, please try again later.",
+    "ItemsGone": "One or more items you selected have been traded already, the market has been refreshed.",
+    "InternalTradeCancelled": "Internal error, please try again later.",
+    "UserTradeCancelled": "You have cancelled the trade offer.",
+    "InternalTradeExpired": "Internal error, please try again later.",
+    "UserTradeExpired": "You did not respond to the trade in time, it has expired.",
+    "InternalWentToEscrow": "Internal error, please contact support.",
+    "UserWentToEscrow": "The items went into escrow, please contact support.",
+    "RefAlreadySet": "This account is already associated with a referral code.",
+    "RefNotFound": "This referral code was not found.",
+    "RefInvalid": "Your referral code is invalid, please use alphanumeric characters, all lowercase and max 16 chars.",
+    "RefAlreadyExist": "This referral code already exists.",
+    "RefAlreadyCreated": "You already made a referral code.",
+    "RefCannotUseSelf": "You cannot redeem your own referral code.",
+    "CaseNotFound": "This case does not exist.",
+    "BattleNotFound": "We couldn't find this battle.",
+    "BattleClosed": "This battle is closed.",
+    "BattleAlreadyCreated": "You cannot create more battles.",
+    "BattleAlreadyIn": "You are already in this battle.",
+    "BattleRequireThreePlus": "Battle requires 3 or more slots to start now.",
+    "BattleRequireTwoPlayers": "Battle requires 2 or more players to start now.",
+    "BattleAlreadyStarted": "This battle was already started."
+  },
+  "tradeStates": {
+    "titles": {
+      "UnknownState": "Internal Error",
+      "Waiting": "Processing Data",
+      "CheckingUser": "Verifying User",
+      "SendingInternalTrades": "Gathering Items",
+      "SendingUserTrade": "Sending Trade",
+      "UserTradeSent": "Trade Sent",
+      "Cancelled": "Trade Cancelled",
+      "Expired": "Trade Expired",
+      "Escrow": "Trade Escrowed",
+      "Errored": "Trade Errored",
+      "Success": "Trade Successful",
+      "BalanceAttributionError": "Error Adding Balance"
+    },
+    "descriptions": {
+      "UnknownState": "There was an unexpected internal error, please contact support.",
+      "Waiting": "Your trade is being processed.",
+      "CheckingUser": "We are checking your user data.",
+      "SendingInternalTrades": "Your items are being collected.",
+      "SendingUserTrade": "Your trade is being sent.",
+      "UserTradeSent": "Your trade has been sent, press the button below to open it in your browser. Please accept it quickly to avoid expiration.",
+      "Cancelled": "The trade was cancelled either by you or the bot.",
+      "Expired": "You did not respond to the offer in time, please try again",
+      "Escrow": "The trade was put into Steam Escrow, please contact support.",
+      "Errored": "Error:",
+      "Success": "The transaction has been completed.",
+      "BalanceAttributionError": "There was a problem crediting your account, please contact support."
+    }
+  },
+  "common": {
+    "close": "Close",
+    "save": "Save"
+  }
+}

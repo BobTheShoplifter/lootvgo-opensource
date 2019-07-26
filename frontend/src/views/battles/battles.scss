@@ -1,0 +1,132 @@
+@import '../../styles/variables.scss';
+.flex.flex-shrink.md8 {
+  width: 100%;
+}
+
+.key-count {
+  border-radius: 3px;
+  overflow: hidden;
+  .icon {
+    transition: all 0.3s ease;
+  }
+  .refresh-btn {
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+    transform: translateY(40px);
+    opacity: 0;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+  &:hover {
+    .key-icon {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    .refresh-btn {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.listings {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  th {
+    border: none !important;
+  }
+  .listing {
+    height: 1px;
+    background: transparent;
+    td {
+      vertical-align: middle;
+    }
+    .rounds {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .actions {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .divider-right {
+      border-right: 2px solid $darker !important;
+    }
+    .cases {
+      width: 100%;
+      overflow-x: auto;
+      .inner {
+        min-width: 100px;
+        max-width: 1px;
+        .case {
+          img {
+            max-width: 64px;
+            margin: -10px 0 -30px 0;
+          }
+        }
+      }
+    }
+    .players .slot {
+      background: $darker;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 20px;
+      height: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.game-main {
+  flex: 1 0 50%;
+  min-width: 450px; // width: 100%;
+  // overflow: hidden;
+}
+
+.game-sidebar {
+  flex: 1 0 50%;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.shortcuts {
+  .key {
+    background: $dark + 10;
+    border: 2px solid $dark + 30;
+    border-radius: 3px;
+  }
+  img.case {
+    cursor: pointer;
+    max-width: 55px;
+    transition: opacity 0.3s ease;
+    opacity: 0.4;
+    &.active {
+      opacity: 1;
+    }
+    &.select {
+      max-width: 35px;
+      opacity: 0.6;
+      margin: -30% 0;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .round-input {
+    text-align: center;
+    width: 20px;
+    border-bottom: 1px dashed $tertiary;
+    opacity: 1;
+    background: dark;
+    color: $tertiary;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}

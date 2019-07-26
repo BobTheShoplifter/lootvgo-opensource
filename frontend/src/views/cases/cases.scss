@@ -1,0 +1,245 @@
+@import '../../styles/variables.scss';
+.jumbotron {
+  min-height: 35vh;
+  overflow: visible;
+
+  /deep/ .jumbotron__image {
+    filter: blur(7px);
+  }
+}
+
+.game-main {
+  flex: 1 0 50%;
+  min-width: 450px;
+}
+
+.game-sidebar {
+  flex: 1 0 50%;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.login-ctn {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.cta-text {
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 55px));
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-shrink: 0;
+
+  .card,
+  .card > .header {
+    box-shadow: 0 0 12px rgba(black, 0.8);
+  }
+}
+
+.key-count {
+  border-radius: 3px;
+  overflow: hidden;
+
+  .icon {
+    transition: all 0.3s ease;
+  }
+
+  .btn .icon {
+    display: none;
+  }
+
+  .refresh-btn {
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+
+    transform: translateY(40px);
+    opacity: 0;
+
+    &:hover {
+      color: $primary !important;
+    }
+  }
+
+  &:hover {
+    .key-icon {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    .refresh-btn {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.cases {
+  &.cases-buy {
+    img {
+      cursor: pointer;
+    }
+    .icon.absolute {
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.3);
+      pointer-events: none;
+    }
+
+    .case:hover {
+      img {
+        opacity: 0.7;
+      }
+      .icon.absolute {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+  }
+  .case {
+    display: flex;
+    flex-direction: column;
+    background: $dark;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    max-width: calc(33% - 24px);
+    width: calc(33% - 24px);
+
+    .fw-semibold:first-child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      transition: all 0.3s ease;
+    }
+
+    .remaining {
+      left: 50%;
+      top: 40px;
+      transform: translateX(-50%);
+    }
+
+    .btn:hover {
+      transform: scale(0.95);
+    }
+
+    .amount {
+      top: 0;
+      right: 0;
+      transform: translate(20%, -30%);
+    }
+
+    &:hover {
+      background: $dark + 5;
+
+      &:not(.ready) img {
+        transform: scale(1.05);
+      }
+    }
+
+    &.ready {
+      img {
+        animation: box-bounce 2s ease infinite;
+      }
+    }
+
+    &.pending {
+      img {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.items-showcase {
+  .item {
+    flex-grow: 1;
+    width: 200px;
+    max-width: 200px;
+
+    &.knife .item-img {
+      transform: scale(1.1) rotate(30deg);
+    }
+
+    &.vibrant .item-img {
+      filter: brightness(110%) saturate(150%);
+    }
+
+    figure {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 5px solid;
+      padding: 10px;
+
+      img {
+        width: 80%;
+        margin: -20px;
+        max-width: 200px;
+        padding: 8px;
+      }
+
+      .price {
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 5px 10px;
+      }
+
+      .odds {
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        padding: 5px 10px;
+      }
+
+      // rarity backgrounds
+      &[rarity='#4b69ff'] {
+        background: linear-gradient(to bottom right, rgba(#4b69ff, 0.5), rgba($darker, 0.5));
+      }
+      &[rarity='#8847ff'] {
+        background: linear-gradient(to bottom right, rgba(#8847ff, 0.5), rgba($darker, 0.5));
+      }
+      &[rarity='#d32ee6'] {
+        background: linear-gradient(to bottom right, rgba(#d32ee6, 0.5), rgba($darker, 0.5));
+      }
+      &[rarity='#FFD700'] {
+        background: linear-gradient(to bottom right, rgba(#ffd700, 0.5), rgba($darker, 0.5));
+      }
+      &[rarity='#eb4b4b'] {
+        background: linear-gradient(to bottom right, rgba(#eb4b4b, 0.5), rgba($darker, 0.5));
+      }
+      &[rarity='#9abaeb'] {
+        background: linear-gradient(to bottom right, rgba(#9abaeb, 0.5), rgba($darker, 0.5));
+      }
+    }
+
+    .inspect-btn {
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
+  }
+
+  .user {
+    text-decoration: none;
+    img {
+      max-width: 30px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  .section.content {
+    flex: 1;
+
+    .flex.cards {
+      min-height: 300px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 25px !important;
+        background-color: $quaternary !important;
+      }
+    }
+  }
+}
+
+// .card {
+//   border-radius: 8px 8px 0 0 !important;
+//
+// }
+
+.categories {
+  .list__tile__title {
+    font-size: 16px;
+  }
+
+  .selected {
+    background: $darker;
+    color: $quaternary;
+
+    .list__tile__title {
+      font-weight: bold;
+    }
+  }
+}
+
+/deep/ .icon {
+  transition: transform 0.3s ease !important;
+}
+
+.expansion-panel__container {
+  border-top: 0 !important;
+  max-width: 100% !important;
+
+  .header {
+    box-shadow: 0 0 15px rgba(black, 0.8);
+    border-radius: 8px 8px 0 0 !important;
+  }
+}
+
+.expansion-panel--inset .expansion-panel__container--active {
+  max-width: 95% !important;
+}
+
+/deep/ .expansion-panel__header {
+  background: $dark;
+}
