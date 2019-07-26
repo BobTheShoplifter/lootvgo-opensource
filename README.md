@@ -10,7 +10,7 @@
 </p>
 
 
-> Great news is LootVGO.com has become open sourced! Before we get started, letting anyone using this know. Bob has taken over the maintaining of the repo feel free to do pull requests! If you need any more help feel free to contact me on twitter
+> Great news is LootVGO.com has become open sourced! Before we get started, letting anyone using this know. Bob has taken over the maintaining of the repo feel free to do pull requests! If you need any more help feel free to contact me on twitter. This is a reupload of the original [repo](https://github.com/ArgylLoL/lootvgo-opensource/)
 
 ## Prerequisites
 
