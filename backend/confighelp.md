@@ -277,7 +277,11 @@ session: {
   
   First you can change the ```callbackURL``` to your domain's
   
-  Then go to https://repl.it/languages/nodejs and input ```Buffer.from("apikey here" + ":").toString("Base64");``` and press run. when you get your hashed api key go to https://apitester.com/ and do it like its in the image
+  Then go to https://repl.it/languages/nodejs and input ```Buffer.from("apikey here" + ":").toString("Base64");``` and press run.
+  ![repl.it](https://i.gyazo.com/63fa3ff41988a868210c917c94e5b21f.png)
+  
+  
+  when you get your hashed api key go to https://apitester.com/ and do it like its in the image
   ![apitester](https://i.gyazo.com/f48d031873913089d0709dbc386e169b.png)
   
   * url : https://api.opskins.com/IOAuth/CreateClient/v1/
@@ -295,9 +299,35 @@ session: {
       in the config.js of the domain in question.
      
   
-  Then when that is done you will create the last hash go back to https://repl.it/languages/nodejs and input ```Buffer.from("YourclientID" + ":" + "YourclientSecret", "ascii").toString("base64")``` when you get this you will add that to the domain in question aswell at ```
+  Then when that is done you will create the last hash go back to https://repl.it/languages/nodejs and input ```Buffer.from("YourclientID" + ":" + "YourclientSecret", "ascii").toString("base64")``` And press run again
+  ![repl.it](https://i.gyazo.com/8115075c032bd5bf7c5d00a60ba29665.png)
+  
+  
+  when you get this you will add that to the domain in question aswell at ```
   customHeaders: {
 				Authorization: 'Basic Authhashhere',
 			},
       ```
       Now when you have done that auth will be working!
+      
+   ## CaseAPI
+	```js
+	caseAPI: {
+		/**
+		 * You will need to use the TradeAPI to make a Case Opening user, and add that API Key here.
+		 */
+		APIKey: 'CaseBotApiKey',
+		CaseUID: -1, //Case Opening user UID unsure where to find it please read readme.md
+	},
+	```
+Here you will have to make yourself a new VCASE user, making a VCASE user is easy
+
+```sh
+curl -d '{"site_url":"http://yoursite.com","display_name":"yoursite"}' -H "Content-Type: application/json" -X POST https://api-trade.wax.io/IUser/CreateVCaseUser/v1/
+```
+When running this command you will get a response like this
+```json
+{"status":1,"time":1564182212,"response":{"api_key":"XXXXXXXXXXXXXXXXXXXXX","user":{"id":-1481,"steam_id":"","display_name":"yoursitetesting","avatar":"https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=identicon\u0026r=pg\u0026s=32","twofactor_enabled":false,"api_key_exists":true,"sms_phone":null,"contact_email":null,"allow_twofactor_code_reuse":false,"inventory_is_private":true,"auto_accept_gift_trades":false,"anonymous_transactions":false,"vcase_restricted":true}}}
+```
+You should save this information somewhere secure, now on the config file the ```CaseUID:``` is the ```"id":-1481``` from the response.
+And ```APIKey``` is the ```"api_key"``` from the response.
