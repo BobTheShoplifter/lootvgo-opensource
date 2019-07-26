@@ -52,7 +52,7 @@ cd lootvgo-opensource/backend
 ```sh
 npm install
 ```
-Once this is done you will have to add all your credentials into the config.js if your having trouble with this step please check out [confighelp.md](https://github.com/BobTheShoplifter/lootvgo-opensource/backend/confighelp.md)
+Once this is done you will have to add all your credentials into the config.js if your having trouble with this step please check out [confighelp.md](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md)
 
 But here is the main things you need to configure is for the next step.
 
@@ -165,7 +165,7 @@ Press space and type
 rethinkdb
 ```
 
-Your backend should now be running fine! You will need to finish your config file before starting the server. Need help with the config check this out [confighelp.md](https://github.com/BobTheShoplifter/lootvgo-opensource/backend/confighelp.md)
+Your backend should now be running fine! You will need to finish your config file before starting the server. Need help with the config check this out [confighelp.md](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md)
 
 When your config is done you can run
 
