@@ -2,7 +2,13 @@
 
 Here is the full config file, I will go over each part and explain how to configure it.
 
-* [Domain]()
+### Fast travel
+
+* [Domain](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#database)
+* [Session](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#session)
+* [Auth](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#auth)
+* [CaseAPI](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#caseapi)
+* [TradeAPI](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#caseapi)
 
 ```js
 'use strict'
