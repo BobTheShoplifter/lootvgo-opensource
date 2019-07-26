@@ -24,6 +24,10 @@
 ***
 > Text instructions [here!](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/instructions.md)
 
+## Quick help
+
+[Config.js help](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md)
+
 
 ## Authors
 
