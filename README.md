@@ -31,7 +31,7 @@
 
 * Twitter: [@BobTShoplifter](https://twitter.com/BobTShoplifter)
 * Github: [@BobTheShoplifter](https://github.com/BobTheShoplifter)
-* Github: [@BobTheShoplifter](https://github.com/ArgylLoL)
+* Github: [@ArgylLoL](https://github.com/ArgylLoL)
 
 ## Show your support
 
