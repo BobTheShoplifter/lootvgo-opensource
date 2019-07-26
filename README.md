@@ -28,6 +28,9 @@
 
 [Config.js help](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md)
 
+## Issues
+
+Dont be afrait to create a new [issue](https://github.com/BobTheShoplifter/lootvgo-opensource/issues/new) if you are facing an error.
 
 ## Authors
 
