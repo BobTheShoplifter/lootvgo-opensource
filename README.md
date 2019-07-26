@@ -12,6 +12,8 @@
 
 > Great news is LootVGO.com has become open sourced! Before we get started, letting anyone using this know. Bob has taken over the maintaining of the repo feel free to do pull requests! If you need any more help feel free to contact me on twitter. This is a reupload of the original [repo](https://github.com/ArgylLoL/lootvgo-opensource/)
 
+**Some of the icons on the frontend might be missing i tried my best to replace them with free ones. I think 2-3 are missing**
+
 ## Prerequisites
 
 * rethinkdb 2.3.6~0xenial
