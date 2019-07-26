@@ -2,6 +2,8 @@
 
 Here is the full config file, I will go over each part and explain how to configure it.
 
+* [Domain]()
+
 ```js
 'use strict'
 
@@ -331,3 +333,29 @@ When running this command you will get a response like this
 ```
 You should save this information somewhere secure, now on the config file the ```CaseUID:``` is the ```"id":-1481``` from the response.
 And ```APIKey``` is the ```"api_key"``` from the response.
+
+For more info on CreateVCaseUser please checkout the docs [here](https://github.com/OPSkins/trade-opskins-api/blob/master/IUser/CreateVCaseUser.md)
+
+  ## TradeAPI
+  
+  ```js
+  tradeAPI: {
+		/**
+		 * These are the accounts used to trade with and use the API Key attached to that account. I would suggest having different account for production and development/localhost
+		 * When you enable 2FA make sure to save the code and add it here.
+		 * BotSteamID is not important.
+		 */
+		production: {
+			apiKey: 'TradeBotApiKey',
+			twoFactorSecret: '',
+			pollInterval: 1000,
+			pollDataPath: './main_account.pdt',
+			botSteamID: '',
+            tradeUrl: 'https://trade.opskins.com/t/'
+ ```
+ 
+ This one is pretty self explanetory this bot is for the battles and battle key deposits.
+ You only need to change 3 things
+ * ```apiKey``` = Your bots api key
+ * ```twoFactorSecret``` = Your bots 2fa sectet you get this during 2fa setup.
+ * ```tradeUrl``` your bots tradeurl
