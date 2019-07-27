@@ -129,7 +129,7 @@ Input the code
 ```sh 
 r.db('lootvgo').table('data').update({id: 'config', data: {
     "blocks": {
-      "battle":true,
+      "battle":false,
       "chat":false
     },
     "chatDelay":1000,
