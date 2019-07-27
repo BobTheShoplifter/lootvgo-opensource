@@ -1,7 +1,7 @@
 'use strict'
 
 const config = require('../config.js').tradeAPI,
-const configCase = require('../config.js').caseAPI,
+configCase = require('../config.js').caseAPI,
   db = require('./rethinkDB.js'),
   Errors = require('./Errors.js'),
     Promise = require('bluebird'),
