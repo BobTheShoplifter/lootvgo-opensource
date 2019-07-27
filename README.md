@@ -22,7 +22,7 @@
 
 ## Install
 
-> If you need any help during this install check out the instructional [VIDEO](https://youtube.com)
+> If you need any help during this install check out the instructional [VIDEO (Coming Soon)](https://youtube.com)
 ***
 > Text instructions [here!](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/instructions.md)
 
