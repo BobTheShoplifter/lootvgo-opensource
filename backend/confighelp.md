@@ -290,10 +290,10 @@ session: {
   
   
   when you get your hashed api key go to https://apitester.com/ and do it like its in the image
-  ![apitester](https://i.gyazo.com/f48d031873913089d0709dbc386e169b.png)
+  ![apitester](https://i.gyazo.com/40109c75a6f2d97df82c9bd530e861f6.png)
   
   * url : https://api.opskins.com/IOAuth/CreateClient/v1/
-  * post data : name=Domain.com&redirect_uri=https://domain.com/auth
+  * post data : name=waxonstream.com&redirect_uri=https://domain.com/auth/return
   
   Press add request headers
   * Header name : Authorization
