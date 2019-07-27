@@ -102,7 +102,11 @@ rethinkdb --bind all
 
 Now go back to the other terminal window that should be in lootvgo-opensource/backend and type
 
+```sh
+npm i cross-env -g
 ```
+
+```sh
 npm run db-setup
 ```
 
