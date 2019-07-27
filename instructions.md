@@ -177,6 +177,10 @@ Your backend should now be running fine! You will need to finish your config fil
 
 When your config is done you can run
 
+```sh
+npm i pm2 -g
+```
+
 #### Development mode
 ```sh 
 WINDOWS - npm run start-windows
