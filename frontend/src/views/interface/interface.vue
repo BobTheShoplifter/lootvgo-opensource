@@ -69,7 +69,7 @@
 					<div class="darker disp-flex flex-center-y key-count mr-3" v-if="user">
 						<span class="relative mx-3 number body-2 mb-1">
 							<fai
-								:icon="['fas', 'swords']"
+								:icon="['fas', 'khanda']"
 								class="icon caption key-icon mr-2 primary--text text-faded-5"
 								size="sm"
 							></fai>

@@ -43,7 +43,7 @@
             <div class="meta">
               <div class="number disp-flex flex-center-y flex-between">
                 <div class="subheading text-uppercase fw-bold danger--text">
-                  <fai :icon="['far', 'bullhorn']" class="danger--text mr-1"></fai>
+                  <fai :icon="['fas', 'bullhorn']" class="danger--text mr-1"></fai>
                   Announcement
                 </div>
                 <div class="caption secondary--text fw-semibold text-faded-3">{{message.timestamp}}</div>
@@ -85,7 +85,7 @@
 
       <div class="input-group pt-0 number disp-flex flex-center-y" v-if="rulesRead">
         <textarea maxlength="255" @keydown="keypressHandler" @keypress.enter.prevent="send()" rows="4" v-model="input" :placeholder="$t('sidebar.chat.placeholder')"></textarea>
-        <fai :icon="['far','paper-plane']" class="icon primary--text ml-2 mr-4" @click="send()"></fai>
+        <fai :icon="['fas','paper-plane']" class="icon primary--text ml-2 mr-4" @click="send()"></fai>
         <v-menu offset-y top left :close-on-content-click="false">
           <fai slot="activator" :icon="['far','smile']" class="icon primary--text ml-2 mr-4"></fai>
           <v-card>
@@ -98,7 +98,7 @@
         <div class="mb-2">{{$t('sidebar.chat.agree')}}</div>
         <v-btn color="quaternary" @click.native="rulesOpen = true" class="has-glow">
           <span class="py-2">
-            <fai :icon="['far', 'info-circle']" size="lg" class="mr-2 icon-svg"></fai>
+            <fai :icon="['fas', 'info-circle']" size="lg" class="mr-2 icon-svg"></fai>
             {{$t('sidebar.chat.rules.title')}}
           </span>
         </v-btn>

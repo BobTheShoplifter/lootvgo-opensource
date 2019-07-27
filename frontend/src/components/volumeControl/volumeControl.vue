@@ -2,7 +2,7 @@
   <v-menu class="volume-ctn" open-on-hover right offset-y attach :nudge-bottom="20" :nudge-right="$vuetify.breakpoint.width < 768 ? 0 : -120" :close-on-content-click="false" min-width="250">
     <div class="volume-icon" slot="activator" @click="toggleMute(!muted)">
       <span class="icon" :class="{muted: muted}">
-        <fai fixed-width :icon="['fal', icon]" size="lg"></fai>
+        <fai fixed-width :icon="['fas', icon]" size="lg"></fai>
       </span>
     </div>
     <v-card class="px-4 py-3" color="dark ">
@@ -75,4 +75,3 @@ export default {
   }
 }
 </style>
-

@@ -1,5 +1,5 @@
 import { faTwitter, faDiscord, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faKey, faBell as faBellSolid, faHeart, faCircle, faCheck, faCheck as faCheckSolid, faEye, faGift, faBolt, faShoppingCart, faInfo, faPlus, faMinus, faSearch, faSyncAlt, faUndo, faShare, faExternalLinkAlt as faExternalLink, faPlay, faKhanda as faSwords, faExclamationTriangle as faExclamationTriangleSolid, faTimes, faCheck as faCheckLight, faVolumeUp, faVolumeDown, faVolumeOff, faVolumeMute, faBell as faBellLight, faTrophy, faSignOutAlt as faSignOut, faCloudDownloadAlt, faBullhorn, faSmile, faPaperPlane, faCog, faAngleDown, faInfoCircle, faLink, faLongArrowAltLeft as LongArrowLeft, faExclamationTriangle, faStar, faBoxOpen } from '@fortawesome/free-solid-svg-icons'
+import { faKey, faBell as faBellSolid, faHeart, faCircle, faCheck, faCheck as faCheckSolid, faEye, faGift, faBolt, faShoppingCart, faInfo, faPlus, faMinus, faSearch, faSyncAlt, faUndo, faShare, faExternalLinkAlt as faExternalLink, faPlay, faKhanda as faSwords, faKhanda, faExclamationTriangle as faExclamationTriangleSolid, faTimes, faCheck as faCheckLight, faVolumeUp, faVolumeDown, faVolumeOff, faVolumeMute, faBell as faBellLight, faTrophy, faSignOutAlt as faSignOut, faCloudDownloadAlt, faBullhorn, faSmile, faPaperPlane, faCog, faAngleDown, faInfoCircle, faLink, faLongArrowAltLeft as LongArrowLeft, faExclamationTriangle, faStar, faBoxOpen } from '@fortawesome/free-solid-svg-icons'
 
 /*import {
 
@@ -91,4 +91,5 @@ export default [
   faExclamationTriangle,
   faStar,
   faBoxOpen,
+  faKhanda,
 ]
