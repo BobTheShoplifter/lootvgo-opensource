@@ -100,6 +100,10 @@ Type the command
 rethinkdb --bind all
 ```
 
+Then Go to http://ipadresstovps:8080#tables and press "+Add Database" and add the names of the databases in the config. Then press add
+
+![](https://i.gyazo.com/3f395ff5ddee85dc8d718e11f375950d.png)
+
 Now go back to the other terminal window that should be in lootvgo-opensource/backend and type
 
 ```sh
