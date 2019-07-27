@@ -194,7 +194,7 @@ npm run start-production
 The frontend is mostly done for you not much you need to do yourself.
 
 ```sh 
-cd lootvgo-opensource/backend
+cd lootvgo-opensource/frontend
 ```
 
 ```sh 
