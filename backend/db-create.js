@@ -25,7 +25,7 @@ var connection = null;
       if (err) throw err
         connection = conn;
               
-              r.dbCreate('MainDB2')
+              r.dbCreate('DevDB')
               
           .run(connection, function(err) {
             if (err) throw err;

@@ -48,7 +48,7 @@ var connection = null;
     if (err) throw err
       connection = conn;
             
-      r.db('MainDB2').table('data').insert({id: 'config', data: {
+      r.db('DevDB').table('data').insert({id: 'config', data: {
         "blocks": {
           "battle":true,
           "chat":false
