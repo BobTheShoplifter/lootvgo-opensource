@@ -113,7 +113,7 @@ module.exports = {
 		 * You will need to use the TradeAPI to make a Case Opening user, and add that API Key here.
 		 */
 		APIKey: 'CaseSiteApiKey',
-		CaseUID: -CaseUserId, //Case Opening user UID unsure where to find it please read readme.md
+		CaseUID: CaseUserId, //Case Opening user UID unsure where to find it please read readme.md
 	},
 	tradeAPI: {
 		/**
