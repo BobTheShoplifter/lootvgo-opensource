@@ -6,7 +6,7 @@
 
 const domain = {
   production: 'changeme.com', //Change to your production domain
-  development: 'changeme.com', //Change to your development domain
+  development: 'dev.changeme.com', //Change to your development domain
   localhost: 'localhost:8085',
 }[process.env.NODE_ENV]
 
@@ -21,9 +21,9 @@ module.exports = {
 		host: 'localhost',
 		port: 28015,
 		db: {
-			production: 'lootvgo', //Change these to what you want the DB to be named.
-			development: 'lootvgo_dev',
-			localhost: 'lootvgo_dev',
+			production: 'Databasenamemain', //Change these to what you want the DB to be named.
+			development: 'Databasedev',
+			localhost: 'Databasedev',
 		}[process.env.NODE_ENV],
 		user: 'admin',
 		password: {
@@ -41,7 +41,7 @@ module.exports = {
 			sameSite: 'lax',
 			secure: true,
 		},
-		secret: 'ChangeMe', //Come up with your own session secret, best to have a hashed on.
+		secret: 'YourSocketSecret', //Come up with your own session secret, best to have a hashed on.
 		name: {
 			production: '_sid',
 			development: '_dsid',
@@ -62,7 +62,7 @@ module.exports = {
 	},
 	socket: {
 		transports: ['websocket'],
-		origins: 'www.Changeme.com:* Changeme.com:* dev.Changeme.com:* localhost:*', //Change these to match your domains
+		origins: 'www.changeme.com:* changeme.com:* dev.changeme.com:* localhost:*', //Change these to match your domains
 		serveClient: false,
 	},
 	auth: {
@@ -76,11 +76,11 @@ module.exports = {
 			tokenURL: 'https://oauth.opskins.com/v1/access_token',
 			clientID: '',
 			clientSecret: '',
-			callbackURL: 'https://Changeme.com/auth/return', //Change to your domain
+			callbackURL: 'https://changeme.com/auth/return', //Change to your domain
 			passReqToCallback: true,
 			state: true,
 			customHeaders: {
-				Authorization: 'Basic Authhashhere',
+				Authorization: 'Basic ',
 			},
 		},
 		development: {
@@ -88,11 +88,11 @@ module.exports = {
 			tokenURL: 'https://oauth.opskins.com/v1/access_token',
 			clientID: '',
 			clientSecret: '',
-			callbackURL: 'https://dev.Changeme.com/auth/return',
+			callbackURL: 'https://dev.changeme.com/auth/return',
 			passReqToCallback: true,
 			state: true,
 			customHeaders: {
-				Authorization: 'Basic Authhash',
+				Authorization: 'Basic ',
 			},
 		},
 		localhost: {
@@ -104,7 +104,7 @@ module.exports = {
 			passReqToCallback: true,
 			state: true,
 			customHeaders: {
-				Authorization: 'Basic Authhash',
+				Authorization: 'Basic ',
 			},
 		},
 	}[process.env.NODE_ENV],
@@ -112,8 +112,8 @@ module.exports = {
 		/**
 		 * You will need to use the TradeAPI to make a Case Opening user, and add that API Key here.
 		 */
-		APIKey: 'CaseBotApiKey',
-		CaseUID: -1, //Case Opening user UID unsure where to find it please read readme.md
+		APIKey: 'CaseSiteApiKey',
+		CaseUID: -CaseUserId, //Case Opening user UID unsure where to find it please read readme.md
 	},
 	tradeAPI: {
 		/**
@@ -122,28 +122,28 @@ module.exports = {
 		 * BotSteamID is not important.
 		 */
 		production: {
-			apiKey: 'TradeBotApiKey',
-			twoFactorSecret: '',
+			apiKey: 'battlebotapikey',
+			twoFactorSecret: 'battlebot2fa',
 			pollInterval: 1000,
 			pollDataPath: './main_account.pdt',
 			botSteamID: '',
-            tradeUrl: 'https://trade.opskins.com/t/'
+            tradeUrl: 'battlebottrade'
 		},
 		development: {
-			apiKey: 'TradeBotApiKey',
-			twoFactorSecret: '',
+			apiKey: 'battlebotapikey',
+			twoFactorSecret: 'battlebot2fa',
 			pollInterval: 1000,
 			pollDataPath: './dev_account.pdt',
 			botSteamID: '',
-			tradeUrl: 'https://trade.opskins.com/t/'
+			tradeUrl: 'battlebottrade'
 		},
 		localhost: {
-			apiKey: 'TradeBotApiKey',
-			twoFactorSecret: '',
+			apiKey: 'battlebotapikey',
+			twoFactorSecret: 'battlebot2fa',
 			pollInterval: 1000,
 			pollDataPath: './dev_account.pdt',
 			botSteamID: '',
-			tradeUrl: 'https://trade.opskins.com/t/'
+			tradeUrl: 'battlebottrade'
 		},
 	}[process.env.NODE_ENV],
 }
