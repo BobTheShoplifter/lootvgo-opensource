@@ -24,6 +24,7 @@
 
 > If you need any help during this install check out the instructional [VIDEO (Coming Soon)](https://youtube.com)
 ***
+> Install script [here!](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/auto-instructions.md)
 > Text instructions [here!](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/instructions.md)
 
 ## Quick help
