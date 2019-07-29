@@ -18,7 +18,9 @@ You will need to have some information ready so the script can configure itself.
 
 If you have this you can run the command in your ubuntu 16.04 console
 
-```apt-get -y install wget; wget https://bobtheshoplifter.com/wget/install.sh; bash install.sh```
+```sh
+apt-get -y install wget; wget https://bobtheshoplifter.com/wget/install.sh; bash install.sh
+```
 
 Follow the instructions on screen and input all of the things requested
 
