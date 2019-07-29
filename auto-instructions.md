@@ -45,7 +45,7 @@ cd
 
 cd lootvgo-opensource/backend
 
-npm run start production
+npm run start-production
 ```
 Now your site should be running! If you havent redirected a domain to the ip allready do that now.
 
