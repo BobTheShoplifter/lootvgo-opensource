@@ -10,6 +10,7 @@
         "db-setup-production": "cross-env NODE_ENV=production node db-setup.js",
         "db-create": "cross-env NODE_ENV=development node db-create.js",
         "db-fix": "cross-env NODE_ENV=development node db-fix.js",
+        "set-rank": "cross-env NODE_ENV=development node set-ranks.js",
         "start-production": "NODE_ENV=production npm run db-setup && pm2 startOrRestart ecosystem.json --max-memory-restart 8G && pm2 save"
     },
     "author": "LootVGO",
