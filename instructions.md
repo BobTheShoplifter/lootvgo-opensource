@@ -266,3 +266,39 @@ location / {
 **Note: index.html in dist, needs to be served over HTTP for it to work properly**
 
 ![](https://i.gyazo.com/434b2f9276f94723847fbdb130cd48d0.png)
+
+## Setting ranks
+
+To set your rank please open the ```set-ranks.js``` in the backend folder with filezilla or your ftp software.
+
+```js
+'use strict';
+
+const r = require('./lib/rethinkDB.js').r
+
+
+var connection = null;
+
+
+  r.connect({
+    db: 'DatabaseNameHere'
+}, function(err, conn) {
+    if (err) throw err
+      connection = conn;
+            
+      r.db('DatabaseNameHere').table('users').get('STEAMID_OR_OPUID').update({rank: 1})
+            
+        .run(connection, function(err) {
+          if (err) throw err;
+          console.log(`Rank was set!`)
+          process.exit(0);
+        });
+    });
+```
+// User 0
+// Admin 1
+// Mod 2
+// Verified 3
+
+Edit the DatabaseNameHere to your main database and add your steamid/opskins id. If you have steam linked you must use steamid.
+Then set the rank to the prefered new rank.
