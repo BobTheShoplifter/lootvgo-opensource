@@ -308,7 +308,8 @@ session: {
      
   
   Then when that is done you will create the last hash go back to https://repl.it/languages/nodejs and input ```Buffer.from("YourclientID" + ":" + "YourclientSecret", "ascii").toString("base64")``` And press run again
-  ![repl.it](https://i.gyazo.com/8115075c032bd5bf7c5d00a60ba29665.png)
+ 
+ ![repl.it](https://i.gyazo.com/8115075c032bd5bf7c5d00a60ba29665.png)
   
   
   when you get this you will add that to the domain in question aswell at ```
