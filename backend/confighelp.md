@@ -304,7 +304,7 @@ session: {
   Now for the domain you just generated a client id + client secret input it in ```clientID: '',
 			clientSecret: '',
       ``` 
-      in the config.js of the domain in question.
+      in the config.js of the domain in question. Remove any == signs from this return!
      
   
   Then when that is done you will create the last hash go back to https://repl.it/languages/nodejs and input ```Buffer.from("YourclientID" + ":" + "YourclientSecret", "ascii").toString("base64")``` And press run again
