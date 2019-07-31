@@ -110,7 +110,7 @@ db.getConfig((err, config) => {
 // cache clear endpoint
 app.get('/clearCaseCache', (req, res) => {
   if (!req.query.password) return res.status(400).send({ success: false, err: 'Invalid parameters' })
-  if (req.query.password !== 'somerandomstring')
+  if (req.query.password !== config.session.secret)
     return res.status(400).send({ success: false, err: 'Wrong password' })
 
   try {
