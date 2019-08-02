@@ -90,3 +90,9 @@ var connection = null;
 
 Edit the DatabaseNameHere to your main database and add your steamid/opskins id. If you have steam linked you must use steamid.
 Then set the rank to the prefered new rank.
+
+Save it then run the command.
+
+```
+npm run set-rank
+```
