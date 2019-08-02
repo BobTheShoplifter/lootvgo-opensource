@@ -96,3 +96,7 @@ Save it then run the command.
 ```
 npm run set-rank
 ```
+
+## Other
+
+I strongly suggest setting a database password when in production you can learn more about that [Here! (RethinkDB DOCS)](https://www.rethinkdb.com/docs/permissions-and-accounts/#the-admin-user)
