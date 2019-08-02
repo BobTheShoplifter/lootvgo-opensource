@@ -302,3 +302,8 @@ var connection = null;
 
 Edit the DatabaseNameHere to your main database and add your steamid/opskins id. If you have steam linked you must use steamid.
 Then set the rank to the prefered new rank.
+
+
+## Other
+
+I strongly suggest setting a database password when in production you can learn more about that [Here! (RethinkDB DOCS)](https://www.rethinkdb.com/docs/permissions-and-accounts/#the-admin-user)
