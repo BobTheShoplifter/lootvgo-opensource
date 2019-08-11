@@ -74,13 +74,13 @@ module.exports = {
 		production: {
 			authorizationURL: 'https://oauth.opskins.com/v1/authorize?duration=permanent&scope=identity_basic+open_cases+balance+instant_sell_recent_items+purchase_keys',
 			tokenURL: 'https://oauth.opskins.com/v1/access_token',
-			clientID: '',
-			clientSecret: '',
+			clientID: 'BestClientID',
+			clientSecret: 'BestClientSecret',
 			callbackURL: 'https://changeme.com/auth/return', //Change to your domain
 			passReqToCallback: true,
 			state: true,
 			customHeaders: {
-				Authorization: 'Basic ',
+				Authorization: 'Basic AuthHashHereOk',
 			},
 		},
 		development: {
