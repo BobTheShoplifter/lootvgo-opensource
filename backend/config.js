@@ -127,7 +127,7 @@ module.exports = {
 			pollInterval: 1000,
 			pollDataPath: './main_account.pdt',
 			botSteamID: '',
-            tradeUrl: 'battlebottrade'
+            tradeUrl: 'battlebottradeurl'
 		},
 		development: {
 			apiKey: 'battlebotapikey',
@@ -135,7 +135,7 @@ module.exports = {
 			pollInterval: 1000,
 			pollDataPath: './dev_account.pdt',
 			botSteamID: '',
-			tradeUrl: 'battlebottrade'
+			tradeUrl: 'battlebottradeurl'
 		},
 		localhost: {
 			apiKey: 'battlebotapikey',
@@ -143,7 +143,7 @@ module.exports = {
 			pollInterval: 1000,
 			pollDataPath: './dev_account.pdt',
 			botSteamID: '',
-			tradeUrl: 'battlebottrade'
+			tradeUrl: 'battlebottradeurl'
 		},
 	}[process.env.NODE_ENV],
 }
