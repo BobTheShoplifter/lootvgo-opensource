@@ -144,24 +144,47 @@ export default {
         items = shuffle(items)
         items.forEach(i => this.entries.push(i))
       } else {
-        this.entries = []
+        this.entries = [];
 
         this.skins.forEach(item => {
-          let count = Math.floor(item.odds)
-          count = Math.floor(count * 2)
+          let count = Math.floor(item.odds);
+          count = Math.floor(count * 2);
 
           // if an item is under 1%, still put it in sometimes
+
           if (item.type !== 'knife' && count < 1) count = Math.random() < item.odds ? 1 : 0
 
           for (let i = 0; i < count; i++) {
             this.entries.push({
               url: item.url,
               color: item.color
-            })
+            });
           }
-        })
+        });
 
-        this.entries = shuffle(this.entries)
+        this.entries = shuffle(this.entries);
+
+        if(this.entries.length < 90) {
+          this.entries = [];
+  
+          this.skins.forEach(item => {
+            let count = Math.floor(item.odds);
+            count = Math.floor(count * 5);
+  
+            // if an item is under 1%, still put it in sometimes
+  
+            if (item.type !== 'knife' && count < 1) count = Math.random() < item.odds ? 1 : 0
+  
+            for (let i = 0; i < count; i++) {
+              this.entries.push({
+                url: item.url,
+                color: item.color
+              });
+            }
+          });
+  
+          this.entries = shuffle(this.entries);
+        }
       }
 
       // set winning entry
