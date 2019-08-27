@@ -36,7 +36,7 @@ If not try to look for a error message.
 
 ## Configure the last parts
 
-### You will have to configure the auth before starting the script please look [here](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#auth) to see how to do that.
+### You will have to configure the auth before starting the script please look [here](https://github.com/BobTheShoplifter/lootvgo-opensource/blob/master/backend/confighelp.md#auth) to see how to do that. NOTE : AUTH is now configured automaticly still go and check your config file to see everything is there!
 
 After configuring auth you can now finaly start the script by running
 
