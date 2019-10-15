@@ -33,7 +33,7 @@
 
 ## Issues
 
-Dont be afrait to create a new [issue](https://github.com/BobTheShoplifter/lootvgo-opensource/issues/new) if you are facing an error.
+Dont be afraid to create a new [issue](https://github.com/BobTheShoplifter/lootvgo-opensource/issues/new) if you are facing an error.
 
 ## Authors
 
