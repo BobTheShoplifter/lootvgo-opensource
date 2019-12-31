@@ -1,5 +1,5 @@
-<h1 align="center">API'S Used in this project dies 16th december and the project may no longer be working.</h1>
-
+<h2 align="center">API'S Used in this project dies 16th december and the project may no longer be working.</h2>
+<h2 align="center">It has been confirmed the apis used in this project is not coming back.</h2>
 
 <h1 align="center">Welcome to lootvgo-opensource 📦</h1>
 <p>
